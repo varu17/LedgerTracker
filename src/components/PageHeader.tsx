@@ -15,7 +15,13 @@ export function PageHeader({ title, subtitle, actionLabel, onAction }: PageHeade
       justifyContent="space-between"
       alignItems={{ xs: 'stretch', sm: 'center' }}
       gap={2}
-      sx={{ mb: 3 }}
+      sx={{
+    mb: 3,
+    mt: {
+      xs: 5,
+      md: 0,
+    },
+  }}
     >
       <Box>
         <Typography variant="h4" color="text.primary">
